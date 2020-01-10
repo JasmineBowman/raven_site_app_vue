@@ -2,7 +2,17 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/signup">Signup</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/logout">Logout</router-link> |
+      <router-link to="/users">User Index</router-link> |
+      <router-link to="/users">User New</router-link> |
+      <router-link to="/users">User Create</router-link> |
+      <router-link to="/users">User Show</router-link> |
+      <router-link to="/users">User Edit</router-link> |
+      <router-link to="/users">User Update</router-link> |
+      <router-link to="/users">User Destroy</router-link> 
     </div>
     <router-view/>
   </div>
