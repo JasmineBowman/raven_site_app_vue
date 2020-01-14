@@ -5,13 +5,9 @@ import About from "../views/About.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
-import UserIndex from "../views/UserIndex.vue";
-import UserNew from "../views/UserNew.vue";
-import UserCreate from "../views/UserCreate.vue";
-import UserShow from "../views/UserShow.vue";
-import UserEdit from "../views/UserEdit.vue";
-import UserUpdate from "../views/UserUpdate.vue";
-import UserDestroy from "../views/UserDestroy.vue";
+import OrganizationIndex from "../views/OrganizationIndex.vue";
+import OrganizationShow from "../views/OrganizationShow.vue";
+
 
 Vue.use(VueRouter);
 
@@ -45,35 +41,15 @@ const routes = [
     component: Logout
   },
   {
-    path: '/users',
-    name: 'user_index',
-    component: UserIndex
+    path: '/organizations',
+    name: 'organization_index',
+    component: OrganizationIndex
   },
   {
-    path: '/users/new',
-    name: 'user_new',
-    component: UserNew
-  },
-  {
-    path: '/users',
-    name: 'user_create',
-    component: UserCreate
-  },
-  {
-    path: '/user/:id',
-    name: 'user_show',
-    component: UserShow
+    path: '/organizations/:id',
+    name: 'organization_show',
+    component: OrganizationShow
   }, 
-  {
-    path: '/user/:id/edit',
-    name: 'user_edit',
-    component: UserEdit
-  },
-  {
-    path: '/user/:id',
-    name: 'user_destroy',
-    component: UserDestroy
-  },
 ];
 
 const router = new VueRouter({

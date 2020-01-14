@@ -1,18 +1,16 @@
 <template>
   <div id="app">
+    <div class ="container">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/signup">Signup</router-link> |
       <router-link to="/login">Login</router-link> |
       <router-link to="/logout">Logout</router-link> |
-      <router-link to="/users">User Index</router-link> |
-      <router-link to="/users">User New</router-link> |
-      <router-link to="/users">User Create</router-link> |
-      <router-link to="/users">User Show</router-link> |
-      <router-link to="/users">User Edit</router-link> |
-      <router-link to="/users">User Update</router-link> |
-      <router-link to="/users">User Destroy</router-link> 
+      <router-link to="/organizations">Organization Index</router-link> 
+<!--       <router-link to="/organization/:id">Organization Show</ --><!-- router-link>  -->
+
+    </div>
     </div>
     <router-view/>
   </div>
