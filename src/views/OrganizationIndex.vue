@@ -57,29 +57,31 @@
                 <!-- Portfolio -->
                   <section>
                     <header class="major">
-                      <h2>My Portfolio</h2>
+                      <h2>ORGANIZATIONS</h2>
                     </header>
                     <div class="row">
-                      
-  
-                   
+
                       <div class="col-4 col-6-medium col-12-small" v-for="organization in organizations">
+                          
                         <section class="box">
                           <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
                           <header>
-                            <h3>Dolore nisl feugiat</h3>
+                          <p>Name: {{ organization.name }}</p>
                           </header>
-                          <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                          <p>Industry: {{ organization.industry }}</p>
+                          <p>Description: {{ organization.description }}</p>
+                          <p>Email: {{ organization.email }}</p>
+                          <p>Phone: {{ organization.phone }}</p>
+                          <p>Zip: {{ organization.zip }}</p>
                           <footer>
                             <ul class="actions">
-                              <li><a href="#" class="button alt">Find out more</a></li>
+                              <li><router-link v-bind:to="`/organizations/${organization.id}`"> <button>Show All Info</button></router-link></li> 
                             </ul>
                           </footer>
                         </section>
                       </div>
                     </div>
                   </section>
-
               </div>
               <div class="col-12">
 

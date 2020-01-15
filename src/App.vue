@@ -5,7 +5,7 @@
       <!-- Header --
         <section id="header">
 
-          <!-- Logo -->
+          <! Logo -->
             <h1><a href="index.html">Raven Site</a></h1>
 
           <!-- Nav -->
