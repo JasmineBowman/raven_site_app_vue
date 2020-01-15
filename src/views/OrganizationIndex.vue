@@ -4,8 +4,7 @@
           <!-- Banner -->
             <section id="banner">
               <header>
-                <h2>Howdy. This is Dopetrope.</h2>
-                <p>A responsive template by HTML5 UP</p>
+                <h2>Welcome to Raven Site</h2>
               </header>
             </section>
 
@@ -64,7 +63,7 @@
                       <div class="col-4 col-6-medium col-12-small" v-for="organization in organizations">
                           
                         <section class="box">
-                          <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+                          <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
                           <header>
                           <p>Name: {{ organization.name }}</p>
                           </header>
@@ -133,15 +132,13 @@
     <h1>{{ message }}</h1>
 
       <div v-for="organization in organizations">
-
-      <p>Name: {{ organization.name }}</p>
-      <p>Industry: {{ organization.industry }}</p>
-      <p>Description: {{ organization.description }}</p>
-      <p>Email: {{ organization.email }}</p>
-      <p>Phone: {{ organization.phone }}</p>
-      <p>Zip: {{ organization.zip }}</p>
-
-      <router-link v-bind:to="`/organizations/${organization.id}`">Click for Details on the Organization</router-link>
+        <p>Name: {{ organization.name }}</p>
+        <p>Industry: {{ organization.industry }}</p>
+        <p>Description: {{ organization.description }}</p>
+        <p>Email: {{ organization.email }}</p>
+        <p>Phone: {{ organization.phone }}</p>
+        <p>Zip: {{ organization.zip }}</p>
+        <router-link v-bind:to="`/organizations/${organization.id}`">Click for Details on the Organization</router-link>
       </div>
     </div>
 </template>

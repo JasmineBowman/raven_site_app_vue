@@ -15,7 +15,7 @@
     <button v-on:click="setSortAttribute('name')">Sort by Name</button> -->
     <hr>
   </div>
-</div>
+
 </template>
 
 <style>
