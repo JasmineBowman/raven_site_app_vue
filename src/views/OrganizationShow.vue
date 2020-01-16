@@ -7,6 +7,7 @@
     <p>Email: {{ organization.email }}</p>
     <p>Phone: {{ organization.phone }}</p>
     <p>Zip: {{ organization.zip }}</p>
+    <img v-bind:src="recipe.image_url">
   </div>
 </template>
 

@@ -1,43 +1,9 @@
 <template>
   <div id="app">
-        <div id="page-wrapper">
+    <div id="page-wrapper">
+      <router-view/>
 
-      <!-- Header --
-        <section id="header">
-
-          <! Logo -->
-            <h1><a href="index.html">Raven Site</a></h1>
-
-          <!-- Nav -->
-            <nav id="nav">
-              <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li>
-                  <a href="#">Dropdown</a>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor</a></li>
-                    <li><a href="#">Magna phasellus</a></li>
-                    <li><a href="#">Etiam dolore nisl</a></li>
-                    <li>
-                      <a href="#">Phasellus consequat</a>
-                      <ul>
-                        <li><a href="#">Magna phasellus</a></li>
-                        <li><a href="#">Etiam dolore nisl</a></li>
-                        <li><a href="#">Veroeros feugiat</a></li>
-                        <li><a href="#">Nisl sed aliquam</a></li>
-                        <li><a href="#">Dolore adipiscing</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Veroeros feugiat</a></li>
-                  </ul>
-                </li>
-                <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                <li><a href="no-sidebar.html">No Sidebar</a></li>
-              </ul>
-            </nav>
-            <router-view/>
-
+  <h1><a href="index.html">Raven Site</a></h1>
       <!-- Footer -->
         <section id="footer">
           <div class="container">
@@ -45,7 +11,7 @@
               <div class="col-8 col-12-medium">
                 <section>
                   <header>
-                    <h2>Blandit nisl adipiscing</h2>
+                    <h2>Important Dates</h2>
                   </header>
                   <ul class="dates">
                     <li>
@@ -81,7 +47,7 @@
                   <header>
                     <h2>What's this all about?</h2>
                   </header>
-                  <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+                  <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
                   <p>
                     This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
                     <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
@@ -140,14 +106,14 @@
                     <li>
                       <h3>Address</h3>
                       <p>
-                        Untitled Incorporated<br />
-                        1234 Somewhere Road Suite<br />
-                        Nashville, TN 00000-0000
+                        Raven Site, LLC<br />
+                        2020 Overlook Avenue<br />
+                        Cleveland, OH 44109
                       </p>
                     </li>
                     <li>
                       <h3>Mail</h3>
-                      <p><a href="#">someone@untitled.tld</a></p>
+                      <p><a href="#">contact@ravensite.org</a></p>
                     </li>
                     <li>
                       <h3>Phone</h3>
@@ -174,7 +140,7 @@
   </div>
 </template>
 
-<style>
+<!-- <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -195,4 +161,4 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-</style>
+</style> -->
