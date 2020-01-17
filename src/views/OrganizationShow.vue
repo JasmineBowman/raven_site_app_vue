@@ -1,5 +1,10 @@
 <template>
   <div class="container">
+    <section id="banner">
+      <header>
+        <h2>Welcome to Raven Site</h2>
+      </header>
+    </section>
   <h1>Organization Show</h1>
     <p>Name: {{ organization.name }}</p>
     <p>Industry: {{ organization.industry }}</p>
@@ -7,7 +12,7 @@
     <p>Email: {{ organization.email }}</p>
     <p>Phone: {{ organization.phone }}</p>
     <p>Zip: {{ organization.zip }}</p>
-    <img v-bind:src="recipe.image_url">
+    <img v-bind:src="organization.image_url" v-bind:alt="organization.name">
   </div>
 </template>
 

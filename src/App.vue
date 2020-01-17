@@ -1,9 +1,21 @@
 <template>
   <div id="app">
     <div id="page-wrapper">
+      <section id="banner">
+        <header>
+          <h2>Welcome to Raven Site</h2>
+        </header>
+      </section>
       <router-view/>
+      <section id="main">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 col-12-medium">
+              </div>
+            </div>
+          </div>
+      </section>
 
-  <h1><a href="index.html">Raven Site</a></h1>
       <!-- Footer -->
         <section id="footer">
           <div class="container">
@@ -15,29 +27,29 @@
                   </header>
                   <ul class="dates">
                     <li>
-                      <span class="date">Jan <strong>27</strong></span>
-                      <h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-                      <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+                      <span class="date">Jun<strong>7</strong></span>
+                      <h3><a href="#">Graduation!</a></h3>
+                      <p>Inspiration</p>
                     </li>
                     <li>
-                      <span class="date">Jan <strong>23</strong></span>
-                      <h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-                      <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+                      <span class="date">May<strong>15</strong></span>
+                      <h3><a href="#">Alternative Credits Due</a></h3>
+                      <p>Details, Forms Due, Send Email, Send Appt</p>
                     </li>
                     <li>
-                      <span class="date">Jan <strong>15</strong></span>
-                      <h3><a href="#">Magna tempus lorem feugiat</a></h3>
-                      <p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+                      <span class="date">Apr<strong>30</strong></span>
+                      <h3><a href="#">Second Meeting Due</a></h3>
+                      <p>Forms - Reminders - Notes.</p>
                     </li>
                     <li>
-                      <span class="date">Jan <strong>12</strong></span>
-                      <h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-                      <p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+                      <span class="date">Mar 31<strong>12</strong></span>
+                      <h3><a href="#">First Meeting Due.</a></h3>
+                      <p>Forms - Reminders - Notes.</p>
                     </li>
                     <li>
-                      <span class="date">Jan <strong>10</strong></span>
-                      <h3><a href="#">Blandit tempus aliquam?</a></h3>
-                      <p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+                      <span class="date">Feb 15 <strong>10</strong></span>
+                      <h3><a href="#">Alternate Program Period Begins</a></h3>
+                      <p>Some Reminders.</p>
                     </li>
                   </ul>
                 </section>
@@ -48,11 +60,6 @@
                     <h2>What's this all about?</h2>
                   </header>
                   <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-                  <p>
-                    This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-                    <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-                    the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-                  </p>
                   <footer>
                     <ul class="actions">
                       <li><a href="#" class="button">Find out more</a></li>
@@ -63,7 +70,7 @@
               <div class="col-4 col-6-medium col-12-small">
                 <section>
                   <header>
-                    <h2>Tempus consequat</h2>
+                    <h2>What Now?</h2>
                   </header>
                   <ul class="divided">
                     <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -78,7 +85,7 @@
               <div class="col-4 col-6-medium col-12-small">
                 <section>
                   <header>
-                    <h2>Ipsum et phasellus</h2>
+                    <h2>What's Next</h2>
                   </header>
                   <ul class="divided">
                     <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -93,10 +100,9 @@
               <div class="col-4 col-12-medium">
                 <section>
                   <header>
-                    <h2>Vitae tempor lorem</h2>
+                    <h2>Stay Connected</h2>
                   </header>
                   <ul class="social">
-                    <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
                     <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
                     <li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
                     <li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
@@ -130,15 +136,13 @@
                       <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
                   </div>
-
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-    </div>
-  </div>
-</template>
+          </section>
+        </div>
+      </div>
+    </template>
 
 <!-- <style>
 #app {
