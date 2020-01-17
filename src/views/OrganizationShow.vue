@@ -2,7 +2,6 @@
   <div class="container">
     <section id="banner">
       <header>
-        <h2>Welcome to Raven Site</h2>
       </header>
     </section>
   <h1>Organization Show</h1>

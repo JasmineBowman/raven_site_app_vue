@@ -15,58 +15,15 @@
             </div>
           </div>
       </section>
-
       <!-- Footer -->
         <section id="footer">
           <div class="container">
             <div class="row">
               <div class="col-8 col-12-medium">
                 <section>
-                  <header>
-                    <h2>Important Dates</h2>
-                  </header>
-                  <ul class="dates">
-                    <li>
-                      <span class="date">Jun<strong>7</strong></span>
-                      <h3><a href="#">Graduation!</a></h3>
-                      <p>Inspiration</p>
-                    </li>
-                    <li>
-                      <span class="date">May<strong>15</strong></span>
-                      <h3><a href="#">Alternative Credits Due</a></h3>
-                      <p>Details, Forms Due, Send Email, Send Appt</p>
-                    </li>
-                    <li>
-                      <span class="date">Apr<strong>30</strong></span>
-                      <h3><a href="#">Second Meeting Due</a></h3>
-                      <p>Forms - Reminders - Notes.</p>
-                    </li>
-                    <li>
-                      <span class="date">Mar 31<strong>12</strong></span>
-                      <h3><a href="#">First Meeting Due.</a></h3>
-                      <p>Forms - Reminders - Notes.</p>
-                    </li>
-                    <li>
-                      <span class="date">Feb 15 <strong>10</strong></span>
-                      <h3><a href="#">Alternate Program Period Begins</a></h3>
-                      <p>Some Reminders.</p>
-                    </li>
-                  </ul>
                 </section>
               </div>
-              <div class="col-4 col-12-medium">
-                <section>
-                  <header>
-                    <h2>What's this all about?</h2>
-                  </header>
-                  <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-                  <footer>
-                    <ul class="actions">
-                      <li><a href="#" class="button">Find out more</a></li>
-                    </ul>
-                  </footer>
-                </section>
-              </div>
+
               <div class="col-4 col-6-medium col-12-small">
                 <section>
                   <header>
