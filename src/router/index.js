@@ -6,7 +6,7 @@ import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import OrganizationIndex from "../views/OrganizationIndex.vue";
-import OrganizationShow from "../views/OrganizationShow.vue"
+import OrganizationShow from "../views/OrganizationShow.vue";
 
 
 Vue.use(VueRouter);

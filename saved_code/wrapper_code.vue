@@ -1,47 +1,4 @@
-<!DOCTYPE HTML>
-<html lang=en>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Raven Site</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
-
-    <!-- core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/animate.min.css" rel="stylesheet">
-    <link href="/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/responsive.css" rel="stylesheet">
-
-<body class="homepage">
-    <div id="app"></div>
-
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.prettyPhoto.js"></script>
-    <script src="/js/jquery.isotope.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/wow.min.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <body class="homepage is-preload">
-          <div id="page-wrapper">
+    <div id="page-wrapper">
 
       <!-- Header -->
         <section id="header">
@@ -408,37 +365,3 @@
         </section>
 
     </div>
-
-
-
-
-    <div id="app"></div>
- 
-
-    <!-- core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/animate.min.css" rel="stylesheet">
-    <link href="/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css" />
-  
-
-
-    
-
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.prettyPhoto.js"></script>
-    <script src="/js/jquery.isotope.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
