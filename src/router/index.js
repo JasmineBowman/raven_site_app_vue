@@ -7,11 +7,20 @@ import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import OrganizationIndex from "../views/OrganizationIndex.vue";
 import OrganizationShow from "../views/OrganizationShow.vue";
-import Form from "../views/Form.vue";
+import FeedbackForm from "../views/FeedbackForm.vue";
+import AgreementForm from "../views/AgreementForm.vue";
+import ExperienceForm from "../views/ExperienceForm.vue";
+import Blog from "../views/Blog.vue";
+import Calendar from "../views/Calendar.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/home',
+    name: 'home',
+    component: Home
+  },
   {
     path: '/',
     name: 'home',
@@ -48,12 +57,27 @@ const routes = [
   {
     path: '/organizations/:id',
     name: 'organization_show',
-    component: OrganizationShow
+    omponent: OrganizationShow
   }, 
   {
-    path: '/forms/new',
-    name: 'form',
-    component: Form
+    path: '/feedbackforms/new',
+    name: 'feedbackform',
+    component: FeedbackForm
+  },
+  {
+    path: '/agreementforms/new',
+    name: 'agreementform',
+    component: AgreementForm
+  },
+  {
+    path: '/experienceforms/new',
+    name: 'experienceform',
+    component: ExperienceForm
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: Blog
   },
 ];
 

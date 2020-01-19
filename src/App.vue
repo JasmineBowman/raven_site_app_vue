@@ -5,20 +5,23 @@
     <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li class="current"><a href="index.html">Home</a></li>
+          <li class="current"><a href="/home">Home</a></li>
           <li>
-            <a href="#">Dropdown</a>
+            <a href="#">Navigate</a>
             <ul>
               <li><a href="/signup">Sign Up!</a></li>
               <li><a href="/login">Login</a></li>
               <li><a href="/organizations">Participating Organizations</a></li>
-              <li><a href="/forms/new">Forms</a></li>
+              <li><a href="/agreementforms/new">Agreement Form</a></li>
+               <li><a href="/experienceforms/new">Experience Tracking Form</a></li>
+              <li><a href="/feedbackforms/new">Program Feedback Form</a></li>
+              <li><a href="/blog">Blog</a></li>
+              
             </ul>
           </li>
         </ul>
       </nav>
 
-    <router-view/>
       <section id="banner">
         <header>
           <h2>Raven Site</h2>
@@ -34,35 +37,8 @@
             <section id="footer">
               <div class="container">
                 <div class="row">
-                  <div class="col-8 col-12-medium">
-                    <section>
-                      <header>
-                        <h2>IMPORTANT DATES</h2>
-                      </header>
-                      <ul class="dates">
-                        <li>
-                          <span class="date">Feb <strong>18</strong></span>
-                          <h3><a href="#">Last Day for Community Service or Career Path Approvals</a></h3>
-                        </li>
-                        <li>
-                          <span class="date">Mar <strong>23</strong></span>
-                          <h3><a href="#">Initial Supervisor Meeting Reports Due.</a></h3>
-                        </li>
-                        <li>
-                          <span class="date">Apr <strong>20</strong></span>
-                          <h3><a href="#">Mid-Point (second) Supervisor Reports Due</a></h3>
-                        </li>
-                        <li>
-                          <span class="date">May <strong>18</strong></span>
-                          <h3><a href="#">Final Supervisor Meeting Reports Due.</a></h3>
-                        </li>
-                        <li>
-                          <span class="date">Jun <strong>12</strong></span>
-                          <h3><a href="#">GRADUATION DAY!</a></h3>
-                        </li>
-                      </ul>
-                    </section>
-                  </div>
+
+    <router-view/>
                   <div class="col-4 col-12-medium">
                     <section>
                       <header>
@@ -70,7 +46,7 @@
                       </header>
                       <a href="#" class="image featured"><img src="images/ravenstree.jpeg" alt="" /></a>
                       <p>
-                        <strong>Raven Site</strong> is a free app specifically designed to support high school students pursuing alternative pathways to graduation. 
+                        <strong>Raven Site</strong> is a free app specifically designed to support high school seniors as they pursue and engage in either (or both) community service and/or work engagements that will earn them the opportunity to graduate! 
                       </p>
                       <footer>
                         <ul class="actions">
@@ -109,8 +85,6 @@
                         </li>
                       </ul>
                     </section>
-                  </div>
-                  <div class="col-12">
                   </div>
                 </div>
               </div>

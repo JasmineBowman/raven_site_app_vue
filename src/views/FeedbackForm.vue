@@ -1,7 +1,8 @@
 <template>
+<div class="container">
   <div id="app">
     <div id="page-wrapper">
-
+      
       <div class="form-group">
         <label for="email">Your Email Address</label>
         <input type="text"
@@ -9,6 +10,8 @@
            class="form-control"
            v-model="userData.email">
       </div>
+      </div>
+
 
       <div class="form-group">
         <label for="password">Enter Password</label>
