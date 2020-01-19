@@ -5,6 +5,7 @@ import axios from "axios";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import jQuery from "jquery";
+
 // import Vue2Filters from "vue2-filters";
 
 axios.defaults.baseURL = 

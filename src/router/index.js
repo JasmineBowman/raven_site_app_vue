@@ -7,7 +7,7 @@ import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import OrganizationIndex from "../views/OrganizationIndex.vue";
 import OrganizationShow from "../views/OrganizationShow.vue";
-
+import Form from "../views/Form.vue";
 
 Vue.use(VueRouter);
 
@@ -50,6 +50,11 @@ const routes = [
     name: 'organization_show',
     component: OrganizationShow
   }, 
+  {
+    path: '/forms/new',
+    name: 'form',
+    component: Form
+  },
 ];
 
 const router = new VueRouter({
