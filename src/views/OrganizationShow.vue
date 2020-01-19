@@ -1,7 +1,8 @@
 <template>
-  <div class="OrganizationShow">
-    <section id="main">
+<!--   <div class="OrganizationShow">
+    <section id="main"> -->
       <div class="container">
+        HELLO HELLO HELLO 
         <section>
           <header class="major">
             <h2>ORGANIZATION DETAILS</h2>
@@ -15,8 +16,8 @@
           <img v-bind:src="organization.image_url" v-bind:alt="organization.name">
         </section>
       </div>
-    </section>
-  </div>
+<!--     </section>
+  </div> -->
 </template>
 
 <script>
@@ -24,11 +25,10 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      organization: {}
+      organization: {},
     };
   },
   created: function() {
-    console.log('in the create)');
     axios.get('/api/organizations/' + this.$route.params.id).then(response => {
       console.log(response.data);
       this.organization = response.data;

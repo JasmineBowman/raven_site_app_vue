@@ -1,5 +1,46 @@
 <template>
   <div class="home">
+                             <!-- Intro -->
+        <section id="header">
+          <section id="intro" class="container">
+            <div class="row">
+              <div class="col-4 col-12-medium">
+                <section class="first">
+                  <a href="#" class="image featured"><img src="images/YourTeam.jpeg" alt="" /></a>
+                  <header>
+                    <h2>Your Team</h2>
+                  </header>
+                  <p>Raven Site is here to make navigating the alternate pathways to graduation easy and automated.</p>
+                </section>
+              </div>
+              <div class="col-4 col-12-medium">
+                <section class="middle">
+                  <a href="#" class="image featured"><img src="images/YouPic.jpeg" alt="" /></a>
+                  <header>
+                    <h2>You</h2>
+                  </header>
+                  <p>Ready to launch the next phase of your life, whatever it may be, and smart enough to use technoloy to handle forms and appointments. You have more important things to focus on!</p>
+                </section>
+              </div>
+              <div class="col-4 col-12-medium">
+                <section class="last">
+                  <a href="#" class="image featured"><img src="images/next.jpeg" alt="" /></a>
+                  <header>
+                    <h2>Next</h2>
+                  </header>
+                  <p>Like you we are just getting started. Stay connected as we develop additional resources to support you beyond high school graduation.</p>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <ul class="actions">
+                <li><a href="#" class="button large">Get Started</a></li>
+                <li><a href="#" class="button alt large">Learn More</a></li>
+              </ul>
+            </footer>
+          </section>
+      </section>
+
 
     <!-- Important Dates -->
           <div class="col-8 col-12-medium">
@@ -37,21 +78,7 @@
 </template>
 
 <script>
-
-export default {
-  name: 'app',
-  data: function() {
-    return { showDate: new Date() };
-  },
-  created: function() {},
-  methods: {
-    setShowDate(d) {
-      this.showDate = d;
-    },
-  }
-};
 </script>
 
-<style>
-</style>
+
 

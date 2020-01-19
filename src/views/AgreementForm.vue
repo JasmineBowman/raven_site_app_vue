@@ -7,6 +7,10 @@
     <h2>WORK/COMMUNITY SERVICE EXPERIENCE AGREEMENT FORM</h2>
     </header>
 
+    <header class="major">
+    <h2>STUDENT INFORMATION</h2>
+    </header>
+
       <div class="form-group">
         <label for="name">Your Name</label>
         <input type="text"
@@ -107,6 +111,42 @@
            class="form-control">
       </div>
 
+      <header class="major">
+      <h2>ORGANIZATION INFORMATION</h2>
+      </header>
+
+      <div class="form-group">
+        <label for="organizationname">Organization Name</label>
+        <input type="text"
+           id="organizationnamename"
+           class="form-control"
+           v-model="organizationData.name">
+      </div>
+
+      <div class="form-group">
+        <label for="organizationaddress">Organization Address</label>
+        <input type="text"
+           id="organizationaddress"
+           class="form-control"
+           v-model="organizationData.address">
+      </div>
+
+      <div class="form-group">
+        <label for="city_zipcode">City/Zip Code</label>
+        <input type="text"
+           id="city_zipcode"
+           class="form-control"
+           v-model="organizationData.city_zipcode">
+      </div>
+
+      <div class="form-group">
+        <label for="organizationphone">Organization Phone</label>
+        <input type="organizationphone"
+           id="phone"
+           class="form-control"
+           v-model="organizationData.phone">
+      </div>
+
       <button class="btn btn-primary"
         @click.prevent="submitted">Submit!
       </button>
@@ -128,30 +168,3 @@
 
 </template>
 
-<script>
-import axios from "axios";
-export default {
-  data() {
-    return {
-      userData: {
-        email: "",
-        password: "",
-      },
-      message: "Describe Your Experience",
-      checkboxOptions: [],
-      isSubmitted: false
-    }
-  },
-  created: function() {
-    axios.get('http://localhost:3000/api/users/23').then(response => {
-    console.log("response");
-  // this.organizations = response.data;
-    });
-  },
-  methods: {
-    submitted() {
-      this.isSubmitted = true;
-    }
-  },
-};
-</script>

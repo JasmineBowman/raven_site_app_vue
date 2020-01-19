@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .form-text { color: #ffffff }
+.form-text-alt { color: #ffffff }
 
 
 html, body, div, span, applet, object,
@@ -1632,7 +1633,7 @@ body {font-family: Verdana, sans-serif;}
 		}
 
 			header.major h2 {
-				background: #fff;
+				background: #d52349;
 				position: relative;
 				top: -0.65em;
 				display: inline;
@@ -2274,7 +2275,7 @@ body {font-family: Verdana, sans-serif;}
 		}
 
 			#banner header h2 {
-				color: #fff;
+				color: #d52349;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;

@@ -57,7 +57,7 @@ const routes = [
   {
     path: '/organizations/:id',
     name: 'organization_show',
-    omponent: OrganizationShow
+    component: OrganizationShow
   }, 
   {
     path: '/feedbackforms/new',

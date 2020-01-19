@@ -1,8 +1,6 @@
 <template>
   <div class="login">
     <div class="container">
-
-
       <form v-on:submit.prevent="submit()">
         <h1>Login</h1>
         <ul>
@@ -45,7 +43,7 @@ export default {
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
-          this.$router.push("/");
+          this.$router.push("/home");
         })
         .catch(error => {
           this.errors = ["Invalid email or password."];
