@@ -28,7 +28,6 @@
            class="form-control">
       </div>
 
-
       <button class="btn btn-primary"
         @click.prevent="submitted">Submit!
       </button>

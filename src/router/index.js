@@ -11,7 +11,7 @@ import AgreementForm from "../views/AgreementForm.vue";
 import FeedbackForm from "../views/FeedbackForm.vue";
 import ExperienceForm from "../views/ExperienceForm.vue";
 import Blog from "../views/Blog.vue";
-import Calendar from "../views/Calendar.vue";
+
 
 Vue.use(VueRouter);
 

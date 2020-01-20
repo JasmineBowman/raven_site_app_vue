@@ -12,7 +12,7 @@
     </header>
 
       <div class="form-group">
-        <label for="name">Student Name</label>
+        <label for="name">Name</label>
         <input type="text"
            id="name"
            class="form-control"
@@ -20,7 +20,7 @@
       </div>
 
       <div class="form-group">
-        <label for="email">Student Email</label>
+        <label for="email">Email</label>
         <input type="email"
            id="email"
            class="form-control"
@@ -36,34 +36,15 @@
       </div>
 
       <div class="form-group">
-        <label for="highschool">Your High School Name</label>
+        <label for="high_school">High School Name</label>
         <input type="text"
           id="text"
           class="form-control"
-          v-model="userData.highschool">
+          v-model="userData.high_school">
       </div>
 
-      <div class="form-group">
-          <label for="communityservice">
-          <input type="checkbox"
-               id="communityservice"
-               value="communityService"
-               v-model="checkboxOptions"> I'm choosing Community Service! 
-          </label>
-      </div>
     </div>
   </div>
-
-          <br>
-
-        <div class="form-group">
-          <label for="workengagement">
-              <input type="checkbox"
-                     id="workengagement"
-                     value="workengagement"
-                     v-model="workEngagement"> I'm choosing a Work Engagement!
-          </label>
-        </div>
 
           <br>
 
@@ -120,6 +101,8 @@
            class="form-control">
       </div>
 
+      <br>
+
     <header class="major">
       <h2>ORGANIZATION INFORMATION</h2>
     </header>
@@ -127,52 +110,47 @@
       <div class="form-group">
         <label for="organizationname">Organization Name</label>
         <input type="text"
-           id="organizationnamename"
+           id="organizationname"
            class="form-control"
            v-model="organizationData.name">
       </div>
 
       <div class="form-group">
-        <label for="organizationaddress">Organization Address</label>
+        <label for="organizationindustry">Organization Industry</label>
         <input type="text"
-           id="organizationaddress"
+           id="organizationindustry"
            class="form-control"
-           v-model="organizationData.address">
+           v-model="organizationData.industry">
       </div>
 
       <div class="form-group">
-        <label for="city_zipcode">City/Zip Code</label>
-        <input type="text"
-           id="city_zipcode"
+        <label for="organizationemail">Organization Email</label>
+        <input type="email"
+           id="organizationemail"
            class="form-control"
-           v-model="organizationData.city_zipcode">
+           v-model="organizationData.email">
       </div>
 
       <div class="form-group">
         <label for="organizationphone">Organization Phone</label>
-        <input type="organizationphone"
-           id="phone"
+        <input type="phone"
+           id="organizationphone"
            class="form-control"
            v-model="organizationData.phone">
       </div>
 
-      <button class="btn btn-primary"
-        @click.prevent="submitted">Submit!
-      </button>
-
-      <div class="card" v-if="isSubmitted">
-        <div class="card-body">
-          <h4 class="card-title">Form Data</h4>
-
-          <p>Email: <b>{{ userData.email }}</b></p>
-          <p>Password: <b>{{ userData.password }}</b></p>
-          <p style="white-space: pre">Message: <b>{{ message }}</b></p>
-          <p>Checkbox Options:</p>
-          <ul>
-              <li v-for="item in checkboxOptions"><b>{{ item }}</b></li>
-          </ul>
-        </div>
+      <div class="form-group">
+        <label for="organizationzip">Organization Zip</label>
+        <input type="text"
+           id="organizationzip"
+           class="form-control"
+           v-model="organizationData.zip">
       </div>
+
+
+
+
+
 </div>
 </template>
 
@@ -185,16 +163,26 @@ export default {
         name: "",
         email: "",
         phone: "",
-        highschool: "",
-        message: "Describe Your Experience",
-        checkboxOptions: [],
-        isSubmitted: false,
-      }
+        high_school: "",
+      },
+      organizationData: {
+        name: "",
+        industry: "",
+        description: "",
+        email: "",
+        phone: "",
+        zip: "",
+      },
+      message: "Describe Your Experience",
+      isSubmitted: false,
     };
   },
   created: function() {
     axios.get('http://localhost:3000/api/users/23').then(response => {
       this.userData = response.data; 
+    }),
+    axios.get('http://localhost:3000/api/organizations/11').then(response => {
+      this.organizationData = response.data; 
     });
   },
   methods: {
