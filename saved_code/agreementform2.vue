@@ -51,25 +51,24 @@
                v-model="checkboxOptions"> I'm choosing Community Service! 
           </label>
       </div>
-    </div>
   </div>
-
+</div>
           <br>
 
-        <div class="form-group">
+          <div class="form-group">
           <label for="workengagement">
               <input type="checkbox"
                      id="workengagement"
                      value="workengagement"
                      v-model="workEngagement"> I'm choosing a Work Engagement!
           </label>
-        </div>
+      </div>
 
           <br>
 
-  <header class="major">
+    <header class="major">
     <h2>PARENT/GUARDIAN AND EMERGENCY CONTACT INFORMATION</h2>
-  </header>
+    </header>
 
       <div class="form-group">
         <label for="parentguardianname">Name (Parent/Guardian)</label>
@@ -120,9 +119,9 @@
            class="form-control">
       </div>
 
-    <header class="major">
+      <header class="major">
       <h2>ORGANIZATION INFORMATION</h2>
-    </header>
+      </header>
 
       <div class="form-group">
         <label for="organizationname">Organization Name</label>
@@ -173,7 +172,8 @@
           </ul>
         </div>
       </div>
-</div>
+  </div>
+
 </template>
 
 <script>
@@ -186,12 +186,15 @@ export default {
         email: "",
         phone: "",
         highschool: "",
-        message: "Describe Your Experience",
-        checkboxOptions: [],
-        isSubmitted: false,
-      }
-    };
+      message: "Describe Your Experience",
+      checkboxOptions: [],
+      isSubmitted: false,
+      },
+    },
   },
+
+
+
   created: function() {
     axios.get('http://localhost:3000/api/users/23').then(response => {
       this.userData = response.data; 
