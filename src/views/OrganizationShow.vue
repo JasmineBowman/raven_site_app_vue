@@ -1,6 +1,4 @@
 <template>
-<!--   <div class="OrganizationShow">
-    <section id="main"> -->
       <div class="container">
         <section>
           <header class="major">
@@ -27,7 +25,6 @@ export default {
   },
   created: function() {
     axios.get('/api/organizations/' + this.$route.params.id).then(response => {
-      console.log(response.data);
       this.organization = response.data;
     });
   },
