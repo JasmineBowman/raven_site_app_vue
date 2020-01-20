@@ -12,7 +12,6 @@
       </div>
       </div>
 
-
       <div class="form-group">
         <label for="password">Enter Password</label>
         <input type="password"
@@ -22,7 +21,7 @@
       </div>
 
       <div class="form-group">
-        <label for="message">Your Message</label>
+        <label for="message">Share Your Experience</label>
         <textarea id="message"
           rows="5"
           class="form-control"
@@ -53,13 +52,8 @@
         <div class="card-body">
           <h4 class="card-title">Form Data</h4>
 
-          <p>Mail: <b>{{ userData.email }}</b></p>
-          <p>Password: <b>{{ userData.password }}</b></p>
-          <p style="white-space: pre">Message: <b>{{ message }}</b></p>
-          <p>Checkbox Options:</p>
-          <ul>
-              <li v-for="item in checkboxOptions"><b>{{ item }}</b></li>
-          </ul>
+          <p>Feedback Received. Thank you!</p>
+
         </div>
       </div>
     </div>
@@ -67,14 +61,16 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  data() {
+  data: function() {
     return {
       userData: {
         email: "",
         password: "",
       },
-      message: "Describe Your Experience",
+      message: "",
       checkboxOptions: [],
       isSubmitted: false
     }

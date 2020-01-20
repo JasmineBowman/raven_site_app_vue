@@ -10,7 +10,7 @@
             <div class="row">
               <div class="col-6 col-12-small">
                 <section class="box">
-                  <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+                  <a href="#" class="image featured"><img src="images/blogseniors.jpeg" alt="" /></a>
                   <header>
                     <h3>Seniors</h3>
                     <p>Posted 45 minutes ago</p>
@@ -26,7 +26,7 @@
               </div>
               <div class="col-6 col-12-small">
                 <section class="box">
-                  <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+                  <a href="#" class="image featured"><img src="images/blogteachers.jpeg" alt="" /></a>
                   <header>
                     <h3>Supervisors</h3>
                     <p>Posted 45 minutes ago</p>

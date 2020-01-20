@@ -1769,8 +1769,8 @@ body {font-family: Verdana, sans-serif;}
 /* Image */
 
   .image-resize {
-  max-width:25%;
-  max-height:25%;
+  max-width:125%;
+  max-height:125%;
   }
 
 	.image {
@@ -2186,7 +2186,7 @@ body {font-family: Verdana, sans-serif;}
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #fff;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2197,7 +2197,7 @@ body {font-family: Verdana, sans-serif;}
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					background: #d52349;
 				}
 
 				#nav > ul > li.current > a {
@@ -2480,8 +2480,8 @@ body {font-family: Verdana, sans-serif;}
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
-				margin: 3em 0 0 0;
+				padding: 3em 3em;
+				margin: 6em 0 0 0;
 			}
 
 		/* Intro */

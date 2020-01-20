@@ -1,5 +1,14 @@
 <template>
   <div class="home">
+
+      <section id="banner">
+        <header>
+          <h2>Raven Site</h2>
+          <a href="/" class="image-resize"><img src="images/raven_image.jpg" alt="" /></a>
+          <p>A Modern Mentor</p>
+        </header>
+      </section>
+
                              <!-- Intro -->
         <section id="header">
           <section id="intro" class="container">

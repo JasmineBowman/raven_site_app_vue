@@ -11,13 +11,6 @@
               <p>Name: {{ organization.name }}</p>
               <p>Industry: {{ organization.industry }}</p>
               <router-link v-bind:to="`/organizations/${organization.id}`"> <button>Show All Info</button></router-link>
-                <p>Description: {{ organization.description }}</p>
-                <p>Email: {{ organization.email }}</p>
-                <p>Phone: {{ organization.phone }}</p>
-                <p>Zip: {{ organization.zip }}</p>
-               <!--  <ul class="actions">
-                  <li><router-link v-bind:to="`/organizations/${organization.id}`"> <button>Show All Info</button></router-link></li>
-                </ul> -->
             </section>
           </div>
           </div>

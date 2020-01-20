@@ -12,11 +12,19 @@
     </header>
 
       <div class="form-group">
-        <label for="name">Your Name</label>
+        <label for="name">Student Name</label>
         <input type="text"
            id="name"
            class="form-control"
            v-model="userData.name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Student Email</label>
+        <input type="email"
+           id="email"
+           class="form-control"
+           v-model="userData.email">
       </div>
 
       <div class="form-group">
@@ -28,11 +36,11 @@
       </div>
 
       <div class="form-group">
-        <label for="High School">Your High School Name</label>
+        <label for="highschool">Your High School Name</label>
         <input type="text"
           id="text"
           class="form-control"
-          v-model="userData.high_school">
+          v-model="userData.highschool">
       </div>
 
       <div class="form-group">
@@ -155,7 +163,7 @@
         <div class="card-body">
           <h4 class="card-title">Form Data</h4>
 
-          <p>Mail: <b>{{ userData.email }}</b></p>
+          <p>Email: <b>{{ userData.email }}</b></p>
           <p>Password: <b>{{ userData.password }}</b></p>
           <p style="white-space: pre">Message: <b>{{ message }}</b></p>
           <p>Checkbox Options:</p>
@@ -168,3 +176,25 @@
 
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      userData: {
+        name: "",
+        email: "",
+        phone: "",
+        highschool: "",
+      message: "Describe Your Experience",
+      checkboxOptions: [],
+      isSubmitted: false
+    }
+  },
+
+  methods: {
+    submitted() {
+      this.isSubmitted = true;
+    }
+  }
+};
+</script>

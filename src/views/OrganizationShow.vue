@@ -2,7 +2,6 @@
 <!--   <div class="OrganizationShow">
     <section id="main"> -->
       <div class="container">
-        HELLO HELLO HELLO 
         <section>
           <header class="major">
             <h2>ORGANIZATION DETAILS</h2>
@@ -16,8 +15,6 @@
           <img v-bind:src="organization.image_url" v-bind:alt="organization.name">
         </section>
       </div>
-<!--     </section>
-  </div> -->
 </template>
 
 <script>

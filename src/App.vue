@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div id="page-wrapper">
-
-    <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li class="current"><a href="/home">Home</a></li>
+          <li class="current">
+            <a href="/home">Home</a>
+          </li>
           <li>
-            <a href="#">Navigate</a>
+            <a href="/home">Navigate</a>
             <ul>
               <li><a href="/signup">Sign Up!</a></li>
               <li><a href="/login">Login</a></li>
@@ -16,22 +16,12 @@
                <li><a href="/experienceforms/new">Experience Tracking Form</a></li>
               <li><a href="/feedbackforms/new">Program Feedback Form</a></li>
               <li><a href="/blog">Blog</a></li>
-              
             </ul>
           </li>
         </ul>
       </nav>
 
-      <section id="banner">
-        <header>
-          <h2>Raven Site</h2>
-          <a href="#" class="image featured"><img src="images/raven_image.jpg" alt="" /></a>
-          <p>A Modern Mentor</p>
-        </header>
-      </section>
 
-<!--       <section id="header">
-      </section> -->
 
             <!-- Footer -->
             <section id="footer">
