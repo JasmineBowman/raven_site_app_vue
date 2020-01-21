@@ -176,6 +176,7 @@
 </div>
 </template>
 
+
 <script>
 import axios from "axios";
 export default {
@@ -185,16 +186,26 @@ export default {
         name: "",
         email: "",
         phone: "",
-        highschool: "",
-        message: "Describe Your Experience",
-        checkboxOptions: [],
-        isSubmitted: false,
-      }
+        high_school: "",
+      },
+      organizationData: {
+        name: "",
+        industry: "",
+        description: "",
+        email: "",
+        phone: "",
+        zip: "",
+      },
+      message: "Thank you for your Application! We'll contact you soon.",
+      isSubmitted: false,
     };
   },
   created: function() {
     axios.get('http://localhost:3000/api/users/23').then(response => {
       this.userData = response.data; 
+    }),
+    axios.get('http://localhost:3000/api/organizations/11').then(response => {
+      this.organizationData = response.data; 
     });
   },
   methods: {

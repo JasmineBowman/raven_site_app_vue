@@ -1769,8 +1769,8 @@ body {font-family: Verdana, sans-serif;}
 /* Image */
 
   .image-resize {
-  max-width:125%;
-  max-height:125%;
+  max-width:75%;
+  max-height:75%;
   }
 
 	.image {

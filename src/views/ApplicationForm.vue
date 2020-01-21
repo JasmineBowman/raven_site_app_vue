@@ -4,7 +4,7 @@
     <div id="page-wrapper">
 
     <header class="major">
-    <h2>WORK/COMMUNITY SERVICE EXPERIENCE AGREEMENT FORM</h2>
+    <h2>WORK/COMMUNITY SERVICE EXPERIENCE APPLICATION FORM</h2>
     </header>
 
     <header class="major">
@@ -42,64 +42,10 @@
           class="form-control"
           v-model="userData.high_school">
       </div>
-
     </div>
   </div>
 
-          <br>
-
-  <header class="major">
-    <h2>PARENT/GUARDIAN AND EMERGENCY CONTACT INFORMATION</h2>
-  </header>
-
-      <div class="form-group">
-        <label for="parentguardianname">Name (Parent/Guardian)</label>
-        <input type="text"
-           id="parentguardianname"
-           class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="address">Address</label>
-        <input type="text"
-           id="address"
-           class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="city/zipcode">City/Zip Code</label>
-        <input type="text"
-           id="city/zipcode"
-           class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="homephone">Home Phone</label>
-        <input type="phone"
-           id="homephone"
-           class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="workphone">Work Phone</label>
-        <input type="phone"
-           id="workphone"
-           class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="cellphone">Cell Phone</label>
-        <input type="phone"
-           id="cellphone"
-           class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="emergencycontactnamephone">Emergency Contact Name and Phone</label>
-        <input type="text"
-           id="emergencycontactnamephone"
-           class="form-control">
-      </div>
+      <br>
 
       <br>
 
@@ -147,11 +93,11 @@
            v-model="organizationData.zip">
       </div>
 
+    <button v-on:click="apply"> Apply! </button>
 
 
 
-
-</div>
+  </div>
 </template>
 
 <script>
@@ -173,7 +119,7 @@ export default {
         phone: "",
         zip: "",
       },
-      message: "Describe Your Experience",
+      message: "Thank you for your Application! We'll contact you soon.",
       isSubmitted: false,
     };
   },
@@ -181,14 +127,28 @@ export default {
     axios.get('http://localhost:3000/api/users/23').then(response => {
       this.userData = response.data; 
     }),
-    axios.get('http://localhost:3000/api/organizations/11').then(response => {
+    axios.get('http://localhost:3000/api/organizations/' + this.$route.query.organization_id).then(response => {
       this.organizationData = response.data; 
     });
   },
   methods: {
     submitted() {
       this.isSubmitted = true;
-    }
+    },
+    apply: function() {
+      console.log('apply')
+      var params = {
+        organization_id: this.organizationData.id
+      };
+      axios
+        .post("/api/applications", params)
+        .then(response => {
+          this.$router.push("/home");
+        })
+        .catch(error => {
+          this.errors = error.response.data.errors;
+        });
+    } 
   }
 };
 </script>

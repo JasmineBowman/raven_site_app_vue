@@ -7,7 +7,7 @@ import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import OrganizationIndex from "../views/OrganizationIndex.vue";
 import OrganizationShow from "../views/OrganizationShow.vue";
-import AgreementForm from "../views/AgreementForm.vue";
+import ApplicationForm from "../views/ApplicationForm.vue";
 import FeedbackForm from "../views/FeedbackForm.vue";
 import ExperienceForm from "../views/ExperienceForm.vue";
 import Blog from "../views/Blog.vue";
@@ -60,9 +60,9 @@ const routes = [
     component: OrganizationShow
   },
   {
-    path: '/agreementforms/new',
-    name: 'agreementform',
-    component: AgreementForm
+    path: '/applicationforms/new',
+    name: 'applicationform',
+    component: ApplicationForm
   },
   {
     path: '/feedbackforms/new',

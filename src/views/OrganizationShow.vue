@@ -11,6 +11,8 @@
           <p>Phone: {{ organization.phone }}</p>
           <p>Zip: {{ organization.zip }}</p>
           <img v-bind:src="organization.image_url" v-bind:alt="organization.name">
+          <button><a v-bind:href="'/applicationforms/new?organization_id='+organization.id"> Submit Your Application Today! </a></button>
+
         </section>
       </div>
 </template>

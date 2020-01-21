@@ -33,18 +33,20 @@
               </div>
               <div class="col-4 col-12-medium">
                 <section class="last">
-                  <a href="#" class="image featured"><img src="images/next.jpeg" alt="" /></a>
+                  <a href="#" class="image-resize"><img src="images/next.jpeg" alt="" /></a>
                   <header>
                     <h2>Next</h2>
                   </header>
+                  <br>
+                  <br>
                   <p>Like you we are just getting started. Stay connected as we develop additional resources to support you beyond high school graduation.</p>
                 </section>
               </div>
             </div>
             <footer>
               <ul class="actions">
-                <li><a href="#" class="button large">Get Started</a></li>
-                <li><a href="#" class="button alt large">Learn More</a></li>
+                <li><a href="/organizations" class="button large">Get Started</a></li>
+                <li><a href="/blog" class="button alt large">Learn More</a></li>
               </ul>
             </footer>
           </section>
@@ -72,7 +74,7 @@
                 </li>
                 <li>
                   <span class="date">May <strong>18</strong></span>
-                  <h3><a href="#">Final Supervisor Meeting Reports Due.</a></h3>
+                  <h3><a href="#">Final Supervisor Meeting Reports Due</a></h3>
                 </li>
                 <li>
                   <span class="date">Jun <strong>12</strong></span>
