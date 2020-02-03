@@ -8,8 +8,8 @@
             <div class="col-4 col-6-medium col-12-small" v-for="organization in organizations">
               <section class="box">
               <img v-bind:src="organization.image_url" v-bind:alt="organization.name">
-              <p>Name: {{ organization.name }}</p>
-              <p>Industry: {{ organization.industry }}</p>
+              <p label class="form-text-alt">Name: {{ organization.name }}</p>
+              <p label class="form-text-alt">Industry: {{ organization.industry }}</p>
               <router-link v-bind:to="`/organizations/${organization.id}`"> <button>Show All Info</button></router-link>
             </section>
           </div>

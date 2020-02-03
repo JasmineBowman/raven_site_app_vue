@@ -55,7 +55,7 @@
                       <ul class="contact">
                         <li>
                           <h3>Address</h3>
-                          <p>
+                          <p label class="form-text">
                             Raven Site, LLC<br />
                             1233 Braun Rd.<br />
                             Cleveland, Ohio 44109
@@ -67,7 +67,7 @@
                         </li>
                         <li>
                           <h3>Phone</h3>
-                          <p>(216) 437-9610</p>
+                          <p label class="form-text">(216) 437-9610</p>
                         </li>
                       </ul>
                     </section>
