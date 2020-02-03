@@ -3,6 +3,10 @@
   <div id="app">
     <div id="page-wrapper">
 
+    <div class="home">
+      <h1>{{ message }}</h1>
+    </div>
+
     <header class="major">
     <h2>WORK/COMMUNITY SERVICE EXPERIENCE APPLICATION FORM</h2>
     </header>
@@ -94,8 +98,6 @@
       </div>
 
     <button v-on:click="apply"> Apply! </button>
-
-
 
   </div>
 </template>

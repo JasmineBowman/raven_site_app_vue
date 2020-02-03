@@ -23,25 +23,9 @@
       <div class="form-group">
         <label for="message">Share Your Experience</label>
         <textarea id="message"
-          rows="5"
+          rows="15"
           class="form-control"
           v-model="message"></textarea>
-      </div>
-
-      <div class="form-group">
-          <label for="requestfollowup">
-              <input type="checkbox"
-                     id="requestfollowup"
-                     value="requestFollowup"
-                     v-model="checkboxOptions"> I Request Follow Up on My Experience
-          </label>
-          <br>
-          <label for="futurementor">
-              <input type="checkbox"
-                     id="futurementor"
-                     value="futureMentor"
-                     v-model="checkboxOptions"> I'm interested in being a Mentor!
-          </label>
       </div>
 
       <button class="btn btn-primary"
@@ -73,7 +57,7 @@ export default {
       message: "",
       checkboxOptions: [],
       isSubmitted: false
-    }
+    };
   },
 
   methods: {

@@ -13,30 +13,24 @@
                   <a href="#" class="image featured"><img src="images/blogseniors.jpeg" alt="" /></a>
                   <header>
                     <h3>Seniors</h3>
-                    <p>Posted 45 minutes ago</p>
+
                   </header>
-                  <p>Share your observations, suggestions and experience. We feel that as much an be learned from a negative experience as a positive experience. We encourage you to be both candid and self aware. Success and growth require both a willingness to learn and acceptance that...</p>
+                  <p>Share your observations, suggestions and experience. We feel that as much an be learned from a negative experience as a positive experience. We encourage you to be both candid and self aware. Success happens one experience at a time.</p>
                   <footer>
-                    <ul class="actions">
-                      <li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-                      <li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-                    </ul>
+                    
                   </footer>
                 </section>
               </div>
               <div class="col-6 col-12-small">
                 <section class="box">
-                  <a href="#" class="image featured"><img src="images/blogteachers.jpeg" alt="" /></a>
+                  <a href="#" class="image featured"><img src="images/teachers3.jpeg" alt="" /></a>
                   <header>
                     <h3>Supervisors</h3>
-                    <p>Posted 45 minutes ago</p>
+          
                   </header>
-                  <p>Share your experience, strength and hope. We feel that as much an be learned from a negative experience as a positive experience. We encourage you to be both candid and self aware. Add in one more sentence for - Add in one more sentence for - Add in one more sentence for</p>
+                  <p>Share your experience, strength and hope. We feel that as much an be learned from a negative experience as a positive experience. We encourage you to be both candid and self aware. </p>
                   <footer>
-                    <ul class="actions">
-                      <li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-                      <li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-                    </ul>
+
                   </footer>
                 </section>
               </div>
